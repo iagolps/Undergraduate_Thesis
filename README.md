@@ -1,2 +1,2 @@
 # Undergraduate_Thesis
-The code for my undergradute thesis, a automation of a white light interpherometer
+The code for my undergradute thesis, a automation of a white light interpherometer using Arduino.
