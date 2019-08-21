@@ -1,6 +1,6 @@
 FROM gcc:latest
 USER root
-COPY ["interferometro_serial.cpp", "C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/"]
+COPY ["C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/", "C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/"]
 RUN mkdir -p C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/
 WORKDIR C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/
 RUN g++ -o serial_app interferometro_serial.cpp

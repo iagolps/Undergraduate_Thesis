@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/MinGW/include",
-                "${workspaceFolder}/lib/SerialClass"
+                "${workspaceFolder}/SerialComApp/lib/SerialClass"
             ],
             "defines": [
                 "_DEBUG",
