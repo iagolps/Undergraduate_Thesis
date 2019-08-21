@@ -1,9 +1,9 @@
 FROM gcc:latest
 USER root
-COPY ["C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/", "C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/"]
+COPY ["interferometro_serial2.cpp", "C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/"]
 RUN mkdir -p C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/
 WORKDIR C:/Users/Iago Leal/Desktop/TCC/TCC/SerialComApp/
-RUN g++ -o serial_app interferometro_serial.cpp
+RUN g++ -o serial_app interferometro_serial2.cpp
 CMD ["./serial_app"]
 
 # FROM gcc:4.9
@@ -13,6 +13,7 @@ CMD ["./serial_app"]
 # CMD ["./myapp"]
 
 # C:\Users\Iago Leal\Desktop\TCC\TCC8.0\SerialComApp\Teste
-# docker build -t my-gcc-app .
-# docker run -it --rm --name my-running-app my-gcc-app
-# or docker run --rm -v "$PWD":C:/Users/Iago Leal/Desktop/TCC/Teste/ -w C:/Users/Iago Leal/Desktop/TCC/Teste/ gcc:latest g++ -o gccteste teste.cpp
+# docker build -t serial_app .
+# docker run -it --rm --name serial_app serial_app
+# or docker run --rm -v "${pwd}:c:\users\iago leal\desktop\tcc\tcc\serialcomapp\" -w "c:\users\iago leal\desktop\tcc\tcc\serialcomapp\" gcc:latest g++ -o serial_app interferometro_serial2.cpp
+# docker run --rm -v "//c/users/iago leal/desktop/tcc/tcc/serialcomapp/" -w "//c/users/iago leal/desktop/tcc/tcc/serialcomapp/" gcc:latest g++ -o serial_app interferometro_serial2.cpp

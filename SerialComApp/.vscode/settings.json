@@ -1,7 +1,0 @@
-{
-    "code-runner.executorMap": {
-        "c": "cd C:/MinGW/bin && g++ g++.exe -o g++ && C:/MinGW/bin/g++"
-    },
-    "terminal.integrated.cursorBlinking": true,
-    "c-cpp-compile-run.run-in-external-terminal": true
-}

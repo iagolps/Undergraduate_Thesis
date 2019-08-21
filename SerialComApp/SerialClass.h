@@ -3,7 +3,14 @@
 
 #define ARDUINO_WAIT_TIME 2000
 
-#include <windows.h>
+// #ifdef _WIN32 
+// #include <Windows.h>
+// #else
+// #include <gtk/gtk.h>
+// #endif
+
+#include <compatibility.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 
